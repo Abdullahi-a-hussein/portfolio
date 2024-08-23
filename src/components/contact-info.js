@@ -30,19 +30,19 @@ export default function Contact() {
   return (
     <div className="flex flex-row justify-between w-[400px]">
       <div className="flex gap-3">
-        <p>Email</p>
+        <p className="text-xl font-semibold tracking-wider p-1">Email</p>
         {email ? (
-          <TiTick className="text-blue-500 mt-1" />
+          <TiTick className="text-blue-500 mt-2" />
         ) : (
-          <FaCopy onClick={copyEmail} className="mt-1" />
+          <FaCopy onClick={copyEmail} className="mt-2" />
         )}
       </div>
       <div className="flex gap-3">
-        <p>Phone Number</p>
+        <p className="text-xl font-semibold tracking-wider p-1">Phone Number</p>
         {phone ? (
-          <TiTick className="text-blue-500 mt-1" />
+          <TiTick className="text-blue-500 mt-2" />
         ) : (
-          <FaCopy onClick={copyPhone} className="mt-1" />
+          <FaCopy onClick={copyPhone} className="mt-2" />
         )}
       </div>
     </div>
