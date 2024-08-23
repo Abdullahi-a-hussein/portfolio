@@ -18,5 +18,10 @@ export default function TypingAnimation({ text, styling }) {
     typeText();
     return () => clearTimeout(typingTimeOut);
   }, []);
-  return <h2 className={styling}>{typedText}</h2>;
+  return (
+    <div className="flex">
+      <h2 className={styling}>{typedText}</h2>
+      <div className=" hidden lg:inline-block md:inline-block h-[25px] w-[3px] bg-gray-400 ml-[2px] blink rounded"></div>
+    </div>
+  );
 }

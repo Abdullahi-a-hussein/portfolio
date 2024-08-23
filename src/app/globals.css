@@ -21,3 +21,18 @@
     text-wrap: balance;
   }
 }
+
+.customer-box-shadow {
+  @apply shadow-xl;
+  box-shadow: var(--tw-shadow), -2px -10px 60px -15px rgba(0, 0, 0, 0.3);
+}
+
+@keyframes blink {
+  50% {
+    opacity: 0;
+  }
+}
+
+.blink {
+  animation: blink 0.7s ease-in-out infinite;
+}

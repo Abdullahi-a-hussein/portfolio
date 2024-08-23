@@ -2,7 +2,7 @@ export const header = "Hi! My name is Abdullahi.";
 import image1 from "@/images/image1.png";
 
 export const subheader =
-  "I am a Fullstack Web developer and an enthusiast Data analyst";
+  "I am a Fullstack Web developer and an enthusiast Data analyst.";
 
 export const projects = [
   {
